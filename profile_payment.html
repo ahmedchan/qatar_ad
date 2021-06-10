@@ -1,0 +1,196 @@
+<!doctype html>
+<html class="no-js" lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title> Profile </title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="apple-touch-icon" href="icon.png">
+<!-- Place favicon.ico in the root directory -->
+
+<link rel="stylesheet" href="css/style.css">
+
+<script>
+(function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|\s)no-js(\s|$)/,"$1js$2")})(document,window,0);
+</script>
+</head>
+<body>
+	<!--[if lte IE 9]>
+	<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+	<![endif]-->
+
+<div class="q_wrapper ">
+	
+	<header class="q_header">
+		<div class="wrapper">
+			<nav class="q_main_nav_wrapper">
+				<ul class="q_main_nav">
+					<li>
+						<a href="#" class="hamburger hamburger--spring js-hamburger" type="button">
+							<span class="hamburger-box">
+								<span class="hamburger-inner"></span>
+							</span>
+						</a>
+
+						<ul>
+							<li><a href="index.html">الرئيسية</a></li>
+							<li><a href="#">عن قطر أد</a></li>
+							<li><a href="#">سياسة الخصوصية</a></li>
+							<li><a href="#">الشروط والأحكام</a></li>
+							<li><a href="#">الشكاوي والأقتراحات</a></li>
+						</ul>
+					</li>
+				</ul>
+
+				<ul class="usr_area" >
+					<li class="loggedout" >
+						<a href="javascript:void(0);" data-remote="login.html" data-toggle="ajaxModal">تسجيل الدخول</a> 
+						&nbsp;&nbsp; 
+						<a href="javascript:void(0);" data-remote="register.html" data-toggle="ajaxModal">إنشاء حساب</a>
+					</li>
+					<li class="loggedin" style="display: none;">
+						<a href="profile.html"><span>ahmed_saeed</span> <img src="img/avatars/default_avatar.png" alt=""></a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	
+<!-- start main content -->
+<main class="main_content">
+
+	<section class="sec sec_pad_top sec_pad_bottom bgـlightgray">
+		
+		<div class="wrapper">
+	<div class="profile_intro">
+		<div class="profile_avatar">
+			<figure>
+				<img src="img/avatars/default_avatar.png" alt="avatar">
+				<figcaption>
+					<div class="upload-btn-wrapper">
+					  <button type="button" class="button_upload"><i class="fas fa-pencil-alt"></i></button>
+					  <input type="file" name="change_avatar" />
+					</div>
+				</figcaption>
+			</figure>
+		</div>
+		<div class="profile_info">
+			<h6 class="mbsm">Ahmed Saeed <span class="prefix">@ahmedsaeed1</span></h6>
+			<p class="text_gray mbxs">mr.ahmedsaeed1@gmail.com</p>
+			<p class="text_gray mbxs">01067258000</p>
+		</div>
+	</div>
+	
+	<div class="text_center mblg">
+		<a href="javascript:void(0);" data-dismiss="modal" data-remote="request_ad.html" data-toggle="ajaxModal" class="button button_accent button_wide"><span><i class="fas fa-long-arrow-alt-right"></i> طلب إعلان مُبوب</span></a>
+	</div>
+</div>
+
+		<ul class="profile_tabs">
+			<li><a href="profile.html">إعلانات مُؤرشفة</a></li>
+			<li class="active"><a href="profile_payment.html">طُرق الدفع</a></li>
+			<li><a href="profile_settings.html">إعدادات</a></li>
+		</ul>
+	</section>
+
+
+	<section class="sec sec_pad_top sec_pad_bottom">
+		<div class="wrapper wrapper_sm">
+			
+			<!-- <div class="filteration">
+				<div class="filter_actions">
+					<a href="javascript:void(0);" data-dismiss="modal" data-remote="request_ad.html" data-toggle="ajaxModal" class="button button_accent button_wide"><span><i class="fas fa-long-arrow-alt-right"></i> ضيف طريقة دفع جديدة</span></a>
+				</div>
+			</div> -->
+
+			
+			<ul class="payment_items">
+				<li class="pay_item mtxlg js_ajax_partial">
+					<div class="pay_item_content">
+						<div class="card_info">
+							<div class="radio">
+								<input type="radio" name="payment" id="visa_radio" checked="checked">
+	        					<label for="visa_radio"></label>
+							</div>
+							<img src="img/visa.png" class="card_img" alt="visa">
+							<div class="card_text">
+								<h5 class="text_muted text_regular text_upper">******. ****** ***** x936</h5>
+								<h5 class="text_muted text_regular text_upper">VISA CARD</h5>
+							</div>
+						</div>
+						<div class="card_actions js_ajax_actions">
+							<button type="button"  data-remote="visa_card.html" data-toggle="ajaxPartial" class="button button_small button_with_arrow button_primary"><span><i class="fas fa-pencil-alt"></i> تعديل</span></button>
+							<button type="button" class="button button_small button_with_arrow button_default"><span><i class="far fa-trash-alt"></i> حذف</span></button>	
+						</div>
+					</div>
+				</li>
+
+				<li class="pay_item mtxlg js_ajax_partial">
+					<div class="pay_item_content">
+						<div class="card_info">
+							<div class="radio">
+								<input type="radio" name="payment" id="mastercard_radio">
+	        					<label for="mastercard_radio"></label>
+							</div>
+							<img src="img/mastercard.png" class="card_img" alt="master card">
+							<div class="card_text">
+								<h5 class="text_muted text_regular text_upper">******. ****** ***** x936</h5>
+								<h5 class="text_muted text_regular text_upper">Master card</h5>
+							</div>
+						</div>
+						<div class="card_actions js_ajax_actions">
+							<button type="button"  data-remote="visa_card.html" data-toggle="ajaxPartial" class="button button_small button_with_arrow button_primary"><span><i class="fas fa-pencil-alt"></i> تعديل</span></button>
+							<button type="button" class="button button_small button_with_arrow button_default"><span><i class="far fa-trash-alt"></i> حذف</span></button>	
+						</div>
+					</div>
+				</li>
+
+				<li class="pay_item mtxlg js_ajax_partial">
+					<div class="pay_item_content">
+						<div class="card_info">
+							<div class="radio">
+								<input type="radio" name="payment" id="2check_radio">
+	        					<label for="2check_radio"></label>
+							</div>
+							<img src="img/2checkout.png" class="card_img" alt="2CHECKOUT">
+							<div class="card_text">
+								<h5 class="text_muted text_regular text_upper">******. ****** ***** x936</h5>
+								<h5 class="text_muted text_regular text_upper">2CHECKOUT</h5>
+							</div>
+						</div>
+						<div class="card_actions js_ajax_actions">
+							<button type="button"  data-remote="visa_card.html" data-toggle="ajaxPartial" class="button button_small button_with_arrow button_primary"><span><i class="fas fa-pencil-alt"></i> تعديل</span></button>
+							<button type="button" class="button button_small button_with_arrow button_default"><span><i class="far fa-trash-alt"></i> حذف</span></button>	
+						</div>
+					</div>
+				</li>
+			</ul>
+
+		</div>
+	</section>
+
+</main>
+<!-- end main content -->
+
+	
+	<footer class="footer">
+	<div class="wrapper">
+		<div class="copyright">&copy; جميع الحقوق محفوظة لشركة نقشات للدعاية والإعلان 2018</div>
+		<div class="socials">
+			<a href="#"><i class="fab fa-facebook-square"></i></a>
+			<a href="#"><i class="fab fa-twitter"></i></a>
+		</div>
+	</div>
+</footer>
+</div>
+
+<!-- js -->
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+
+<script type="text/javascript" src="js/app.js"></script>
+
+
+</body>
+</html>

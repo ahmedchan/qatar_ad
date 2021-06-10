@@ -1,0 +1,290 @@
+<!doctype html>
+<html class="no-js" lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title> Profile </title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="apple-touch-icon" href="icon.png">
+<!-- Place favicon.ico in the root directory -->
+
+<link rel="stylesheet" href="css/style.css">
+
+<script>
+(function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|\s)no-js(\s|$)/,"$1js$2")})(document,window,0);
+</script>
+</head>
+<body>
+	<!--[if lte IE 9]>
+	<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+	<![endif]-->
+
+<div class="q_wrapper ">
+	
+	<header class="q_header">
+		<div class="wrapper">
+			<nav class="q_main_nav_wrapper">
+				<ul class="q_main_nav">
+					<li>
+						<a href="#" class="hamburger hamburger--spring js-hamburger" type="button">
+							<span class="hamburger-box">
+								<span class="hamburger-inner"></span>
+							</span>
+						</a>
+
+						<ul>
+							<li><a href="index.html">الرئيسية</a></li>
+							<li><a href="#">عن قطر أد</a></li>
+							<li><a href="#">سياسة الخصوصية</a></li>
+							<li><a href="#">الشروط والأحكام</a></li>
+							<li><a href="#">الشكاوي والأقتراحات</a></li>
+						</ul>
+					</li>
+				</ul>
+
+				<ul class="usr_area" >
+					<li class="loggedout" >
+						<a href="javascript:void(0);" data-remote="login.html" data-toggle="ajaxModal">تسجيل الدخول</a> 
+						&nbsp;&nbsp; 
+						<a href="javascript:void(0);" data-remote="register.html" data-toggle="ajaxModal">إنشاء حساب</a>
+					</li>
+					<li class="loggedin" style="display: none;">
+						<a href="profile.html"><span>ahmed_saeed</span> <img src="img/avatars/default_avatar.png" alt=""></a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	
+<!-- start main content -->
+<main class="main_content">
+
+	<section class="sec sec_pad_top sec_pad_bottom bgـlightgray">
+		
+		<div class="wrapper">
+	<div class="profile_intro">
+		<div class="profile_avatar">
+			<figure>
+				<img src="img/avatars/default_avatar.png" alt="avatar">
+				<figcaption>
+					<div class="upload-btn-wrapper">
+					  <button type="button" class="button_upload"><i class="fas fa-pencil-alt"></i></button>
+					  <input type="file" name="change_avatar" />
+					</div>
+				</figcaption>
+			</figure>
+		</div>
+		<div class="profile_info">
+			<h6 class="mbsm">Ahmed Saeed <span class="prefix">@ahmedsaeed1</span></h6>
+			<p class="text_gray mbxs">mr.ahmedsaeed1@gmail.com</p>
+			<p class="text_gray mbxs">01067258000</p>
+		</div>
+	</div>
+	
+	<div class="text_center mblg">
+		<a href="javascript:void(0);" data-dismiss="modal" data-remote="request_ad.html" data-toggle="ajaxModal" class="button button_accent button_wide"><span><i class="fas fa-long-arrow-alt-right"></i> طلب إعلان مُبوب</span></a>
+	</div>
+</div>
+
+		<ul class="profile_tabs">
+			<li><a href="profile.html">إعلانات مُؤرشفة</a></li>
+			<li><a href="profile_payment.html">طُرق الدفع</a></li>
+			<li class="active"><a href="profile_settings.html">إعدادات</a></li>
+		</ul>
+	</section>
+
+
+	<section class="sec sec_pad_top sec_pad_bottom">
+		<div class="wrapper wrapper_sm">
+			
+			<ul class="setting_list">
+				<li class="setting_item mtlg">
+					<div class="item_header">
+						<a href="#edit_personal" data-toggle="collapse" data-target="#edit_personal" aria-expanded="true" aria-controls="edit_personal"><h4 class="title"><i class="fas fa-pencil-alt"></i> تعديل الملف الشخصي</h4></a>
+					</div>
+					<div id="edit_personal" class="collapse show">
+						<div class="item_body ">
+							<form action="" method="" class="form layout layout_sm center">
+								<div class="form_row">
+									<label for="" class="form_label">الاسم بالكامل</label>
+									<input type="text" class="form_input" placeholder="السم بالكامل هنا" value="Ahmed Saeed Abd El-Hakim">
+								</div>
+								<div class="form_row">
+									<label for="" class="form_label">البطاقة الشخصية</label>
+									<input type="text" class="form_input" placeholder="رقم البطاقة هنا" value="7638346 67 675 365">
+								</div>
+								<div class="form_row form_submit right">
+									<button type="submit" class="button button_accent"><span>اعتمد</span></button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</li>
+
+				<li class="setting_item mtlg">
+					<div class="item_header">
+						<a href="#edit_phone" class="collapsed" data-toggle="collapse" data-target="#edit_phone" aria-expanded="true" aria-controls="edit_phone"><h4 class="title"><i class="fas fa-pencil-alt"></i> تعديل رقم الهاتف</h4></a>
+					</div>
+					<div id="edit_phone" class="collapse" >
+						<div class="item_body ">
+							<form action="" method="" class="form layout layout_sm center">
+								<div class="form_row">
+									<label for="" class="form_label">رقم الهاتف</label>
+									<input type="text" class="form_input" placeholder="رقم الهاتف هنا" value="01067258000">
+								</div>
+								<div class="form_row form_submit right">
+									<button type="submit" class="button button_accent"><span>اعتمد</span></button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</li>
+
+				<li class="setting_item mtlg">
+					<div class="item_header">
+						<a href="#edit_password" class="collapsed" data-toggle="collapse" data-target="#edit_password" aria-expanded="true" aria-controls="edit_password"><h4 class="title"><i class="fas fa-pencil-alt"></i> تغيٌير كلمة المرور</h4></a>
+					</div>
+					<div id="edit_password" class="collapse" >
+						<div class="item_body ">
+							<form action="" method="" class="form layout layout_sm center">
+								<div class="form_row">
+									<label for="" class="form_label">كلمة المرور القديمة</label>
+									<input type="password" class="form_input" placeholder="*************">
+								</div>
+								<div class="form_row">
+									<label for="" class="form_label">كلمة المرور الجديدة</label>
+									<input type="password" class="form_input" placeholder="*************">
+								</div>
+								<div class="form_row">
+									<label for="" class="form_label">تأكيد كلمة المرور الجديدة</label>
+									<input type="password" class="form_input" placeholder="*************">
+								</div>
+								<div class="form_row form_submit right">
+									<button type="submit" class="button button_accent"><span>اعتمد</span></button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</li>
+
+				<li class="setting_item mtlg">
+					<div class="item_header">
+						<a href="#add_new_email" class="collapsed" data-toggle="collapse" data-target="#add_new_email" aria-expanded="true" aria-controls="add_new_email"><h4 class="title"><i class="fas fa-pencil-alt"></i> إضافة بريد إلكتروني جديد</h4></a>
+					</div>
+					<div id="add_new_email" class="collapse" >
+						<div class="item_body ">
+							<div class="layout layout_sm center">
+								<div class="form_row">
+									<label for="" class="form_label">البريد الحالي:</label>
+									<input type="email" class="form_input" value="mr.ahmedsaeed1@gmail.com">
+								</div>
+								<form action="" method="" class="form mtlg bt">
+									<div class="form_row">
+										<label for="" class="form_label">إضافة بريد جديد</label>
+										<input type="email" class="form_input" placeholder="example@example.com">
+									</div>
+									<div class="form_row">
+										<div class="checkbox mtxs">
+											<input class="inp-cbx" id="cbx" type="checkbox" style="display: none;"/>
+											<label class="cbx" for="cbx">
+												<span>
+													<svg width="12px" height="10px" viewbox="0 0 12 10">
+														<polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+													</svg>	
+					 							</span>
+					 							<span>اجعل البريد الجديد هو البريد الاساسي</span>
+					 						</label>
+				 						</div>
+									</div>
+									<div class="form_row form_submit right">
+										<button type="submit" class="button button_accent"><span>اعتمد</span></button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</li>
+
+				<li class="setting_item mtlg">
+					<div class="item_header">
+						<a href="#general_settings" class="collapsed" data-toggle="collapse" data-target="#general_settings" aria-expanded="true" aria-controls="general_settings"><h4 class="title"><i class="fas fa-pencil-alt"></i> إعدادات عامة</h4></a>
+					</div>
+					<div id="general_settings" class="collapse" >
+						<div class="item_body ">
+
+							<div class="description-toggle">
+								<div class="description-toggle-content">
+									<div class="h6">اصوات اتنبيهات</div>
+									<div class="text_muted">سماع صوت التنبيهات حين يكون لديك رسالة او اشعار خلال تصفحك الموقع</div>
+								</div>
+				
+								<div class="togglebutton">
+									<label class="switch">
+									  <input type="checkbox">
+									  <span class="slider round"></span>
+									</label>
+								</div>
+							</div>
+
+							<div class="description-toggle">
+								<div class="description-toggle-content">
+									<div class="h6">تنبيهات البريد الالكتروني</div>
+									<div class="text_muted">ارسال بريد الكتروني بالدروس الجديدة واللستطلاعات والعروض المقدمة</div>
+								</div>
+				
+								<div class="togglebutton">
+									<label class="switch">
+									  <input type="checkbox" checked="checked">
+									  <span class="slider round"></span>
+									</label>
+								</div>
+							</div>
+
+							<div class="description-toggle">
+								<div class="description-toggle-content">
+									<div class="h6">لغة العرض</div>
+									<div class="text_muted">لغة النص والادخال... متوفر اللغة العربية والانجليزية</div>
+								</div>
+				
+								<div class="select_wrapper">
+									<select name="" id="" class="form_input">
+										<option value="ar">Arabic</option>
+										<option value="en">English</option>
+									</select>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</li>
+
+			</ul>
+
+		</div>
+	</section>
+
+</main>
+<!-- end main content -->
+
+	
+	<footer class="footer">
+	<div class="wrapper">
+		<div class="copyright">&copy; جميع الحقوق محفوظة لشركة نقشات للدعاية والإعلان 2018</div>
+		<div class="socials">
+			<a href="#"><i class="fab fa-facebook-square"></i></a>
+			<a href="#"><i class="fab fa-twitter"></i></a>
+		</div>
+	</div>
+</footer>
+</div>
+
+<!-- js -->
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+
+<script type="text/javascript" src="js/app.js"></script>
+
+
+</body>
+</html>
